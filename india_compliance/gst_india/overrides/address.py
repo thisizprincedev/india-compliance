@@ -94,7 +94,7 @@ def validate_state(doc):
     #     )
 
     doc.gst_state = doc.state
-    doc.gst_state_number = STATE_NUMBERS[doc.state]
+    doc.gst_state_number = STATE_NUMBERS.get(doc.state, "07")
 
     if doc.gstin and doc.gst_state_number != doc.gstin[:2]:
         frappe.throw(
