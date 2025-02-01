@@ -44,7 +44,8 @@ GST_CATEGORY_MAP = {
     "CBW": "Intra-State Supplies attracting IGST",
 }
 
-ACTION_MAP = {"A": "Accepted", "R": "Rejected", "P": "Pending", "N": "No Action"}
+ACTION_MAP = {"A": "Accepted", "R": "Rejected",
+              "P": "Pending", "N": "No Action"}
 
 STATUS_CODE_MAP = {
     "P": "Processed",
@@ -134,7 +135,8 @@ STATE_NUMBERS = {
 }
 
 
-INDIAN_STATES = {k: v for k, v in STATE_NUMBERS.items() if k != "Other Countries"}
+INDIAN_STATES = {k: v for k, v in STATE_NUMBERS.items() if k !=
+                 "Other Countries"}
 
 GST_UOMS = {
     "Bottle": "BTL (Bottles)",
@@ -1450,8 +1452,10 @@ OIDAR = r"^[9][9][0-9]{2}[A-Z]{3}[0-9]{5}[O][S][0-9A-Z]{1}$"
 OVERSEAS = re.compile(rf"{NRI_ID}|{OIDAR}")
 
 UNBODY = re.compile(r"^[0-9]{4}[A-Z]{3}[0-9]{5}[UO]{1}[N][A-Z0-9]{1}$")
-TDS = re.compile(r"^[0-9]{2}[A-Z]{4}[A-Z0-9]{1}[0-9]{4}[A-Z]{1}[1-9A-Z]{1}[D][0-9A-Z]$")
-TCS = re.compile(r"^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z]{1}[1-9A-Z]{1}[C]{1}[0-9A-Z]{1}$")
+TDS = re.compile(
+    r"^[0-9]{2}[A-Z]{4}[A-Z0-9]{1}[0-9]{4}[A-Z]{1}[1-9A-Z]{1}[D][0-9A-Z]$")
+TCS = re.compile(
+    r"^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z]{1}[1-9A-Z]{1}[C]{1}[0-9A-Z]{1}$")
 
 GSTIN_FORMATS = {
     "Registered Regular": REGISTERED,
