@@ -89,8 +89,8 @@ def validate_state(doc):
 
     if doc.state not in STATE_NUMBERS:
         frappe.throw(
-            _("Please select a valid State from available options"),
-            title=_("Invalid State"),
+            _(f"Please select a valid State from available options {doc.state}"),
+            title=_("Invalid State {doc.state}"),
         )
 
     doc.gst_state = doc.state
