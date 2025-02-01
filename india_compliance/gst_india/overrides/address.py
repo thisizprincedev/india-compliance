@@ -87,11 +87,11 @@ def validate_state(doc):
             title=_("Missing Mandatory Field"),
         )
 
-    if doc.state not in STATE_NUMBERS:
-        frappe.throw(
-            _(f"Please select a valid State from available options {doc.state}"),
-            title=_("Invalid State {doc.state}"),
-        )
+    # if doc.state not in STATE_NUMBERS:
+    #     frappe.throw(
+    #         _(f"Please select a valid State from available options {doc.state}"),
+    #         title=_(f"Invalid State {doc.state}"),
+    #     )
 
     doc.gst_state = doc.state
     doc.gst_state_number = STATE_NUMBERS[doc.state]
