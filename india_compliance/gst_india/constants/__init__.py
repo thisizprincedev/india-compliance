@@ -114,7 +114,6 @@ STATE_NUMBERS = {
     "PY": "34",  # Puducherry
     "OC": "96",
     "OT": "97",
-    "": "07"
 }
 
 INDIAN_STATES = {k: v for k, v in STATE_NUMBERS.items() if k != "Other Countries"}
