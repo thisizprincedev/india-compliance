@@ -80,6 +80,40 @@ STATE_NUMBERS = {
     "Uttar Pradesh": "09",
     "Uttarakhand": "05",
     "West Bengal": "19",
+    "KA": "29",  # Karnataka
+    "TN": "33",  # Tamil Nadu
+    "AP": "37",  # Andhra Pradesh
+    "BR": "10",  # Bihar
+    "DL": "07",  # Delhi
+    "GJ": "24",  # Gujarat
+    "HR": "06",  # Haryana
+    "HP": "02",  # Himachal Pradesh
+    "JK": "01",  # Jammu and Kashmir
+    "JH": "20",  # Jharkhand
+    "KL": "32",  # Kerala
+    "MP": "23",  # Madhya Pradesh
+    "MH": "27",  # Maharashtra
+    "MN": "14",  # Manipur
+    "ML": "17",  # Meghalaya
+    "MZ": "15",  # Mizoram
+    "NL": "13",  # Nagaland
+    "OR": "21",  # Odisha
+    "PB": "03",  # Punjab
+    "RJ": "08",  # Rajasthan
+    "SK": "11",  # Sikkim
+    "UP": "09",  # Uttar Pradesh
+    "UK": "05",  # Uttarakhand
+    "WB": "19",  # West Bengal
+    "AN": "35",  # Andaman and Nicobar Islands
+    "LD": "38",  # Ladakh
+    "LA": "31",  # Lakshadweep Islands
+    "TS": "36",  # Telangana
+    "CH": "04",  # Chandigarh
+    "CG": "22",  # Chhattisgarh
+    "DN": "26",  # Dadra and Nagar Haveli and Daman and Diu
+    "PY": "34",  # Puducherry
+    "OC": "96",
+    "OT": "97"
 }
 
 INDIAN_STATES = {k: v for k, v in STATE_NUMBERS.items() if k != "Other Countries"}
